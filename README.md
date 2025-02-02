@@ -18,6 +18,8 @@ Remove: `/function player_statues:api/update {statue:{id:<id>, mode:"remove"}}`
 
 Update all (no parameters, despawns and resummons all statues): `/function player_statues:api/update_all`
 
+Statue data is stored in `player_statues:data statues`, which includes UUIDs for individual model parts. Currently, updating a statue refreshes the UUIDs, and should be used for resetting a statue rather than animations.
+
 ## Credits
 
 **Compsogbrickus** - Datapack Creator. I wrote pretty much everything here!
