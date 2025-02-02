@@ -1,0 +1,6 @@
+{
+    "parent": "player_statues:template/alex/head",
+    "textures": {
+        "skin": "player_statues:skins/example"
+    }
+}

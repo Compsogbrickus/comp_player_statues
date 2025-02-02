@@ -1,0 +1,6 @@
+{
+    "parent": "player_statues:template/alex/left_arm",
+    "textures": {
+        "skin": "player_statues:skins/example"
+    }
+}
