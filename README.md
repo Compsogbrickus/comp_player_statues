@@ -24,4 +24,6 @@ Statue data is stored in `player_statues:data statues`, which includes UUIDs for
 
 **Compsogbrickus** - Datapack Creator. I wrote pretty much everything here!
 
+**Gibbsly** - Simple UUID Converter library, which is found at <https://github.com/gibbsly/gu>
+
 **Additional Credits** - Various player models/statues datapacks, notably one by MelonBP.
