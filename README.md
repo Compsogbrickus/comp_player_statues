@@ -2,21 +2,21 @@
 
 I got tired of using datapacks from other people for player statues, so I made one for myself.
 
-The "Comp Player Statues" folder repository functions as a datapack that can be dropped into a Minecraft world's "datapacks" folder. Once placed into the datapacks folder and once the world is reloaded, it will be ready for use.
+The "Comp Player Statues" folder in this repository functions as a datapack that can be dropped into a Minecraft world's "datapacks" folder. Once placed into the datapacks folder and once the world is reloaded, it will be ready for use.
 
 ## Documentation
 
-Every player model requires a model and texture. See the example resourcepack!
+Every player statue requires a model and texture. See the example resourcepack!
 
-Create: `/function player_statues:api/create {model:{texture:"<texture>"}}`
+Create (minimal): `/function player_statues:api/create {statue:{texture:"<texture>"}}`
 
-Update: `/function player_statues:api/update {model:{id:<id>}}`
+Create (full, model part elements are arbitrary, but `head`, `body`, `left_arm`, `right_arm`, `left_leg`, `right_leg`, and `interaction` have defaults): `/function player_statues:api/create {statue:{id:<id>, texture:"<texture>", pos_x:<coord>, pos_y:<coord>, pos_z:<coord>, rotation_yaw:<degrees>, rotation_pitch:<degrees>, elements:[{id:<model_part>, right_rotation:<quarternion>, scale:[<x>, <y>, <z>], left_rotation:<quarternion>, translation:[<x>, <y>, <z>]}, {id:<interaction>, width:<width>, height:<height>, response:<0,1>, translation:[<x>, <y>, <z>]}]}}`
 
-Remove: `/function player_statues:api/update {model:{id:<id>, mode:"remove"}}`
+Update (same parameters available as creating): `/function player_statues:api/update {statue:{id:<id>}}`
 
-Update all: `/function player_statues:api/update_all`
+Remove: `/function player_statues:api/update {statue:{id:<id>, mode:"remove"}}`
 
-More info here later.
+Update all (no parameters, despawns and resummons all statues): `/function player_statues:api/update_all`
 
 ## Credits
 
