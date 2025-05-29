@@ -1,0 +1,1 @@
+$loot spawn ~ ~ ~ loot $(namespace):$(id)
