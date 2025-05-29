@@ -1,7 +1,12 @@
-function player_statues:internal/update_element_macro with storage player_statues:data score
+data modify storage player_statues:data macro.type set value "-"
+data modify storage player_statues:data macro.type set from storage player_statues:data statues[0].elements[0].type
 
-execute if data storage player_statues:data macro{id:"interaction"} run execute summon minecraft:interaction run function player_statues:internal/summon with storage player_statues:data macro
-execute unless data storage player_statues:data macro{id:"interaction"} run execute summon minecraft:item_display run function player_statues:internal/summon with storage player_statues:data macro
+data modify storage player_statues:data macro.data set value {}
+data modify storage player_statues:data macro.data set from storage player_statues:data statues[0].elements[0].data
 
-execute store result storage player_statues:data score.element_index int 1 run scoreboard players add $player_statues player_statues.element_index 1
-execute if score $player_statues player_statues.element_index < $player_statues player_statues.element_indices run function player_statues:internal/iterate_elements with storage player_statues:data score
+function player_statues:internal/summon_pt1 with storage player_statues:data macro
+
+data modify storage player_statues:data statues[0].elements append from storage player_statues:data statues[0].elements[0]
+data remove storage player_statues:data statues[0].elements[0]
+
+execute unless data storage player_statues:data statues[0].elements[0].end run function player_statues:internal/iterate_elements

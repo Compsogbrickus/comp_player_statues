@@ -1,4 +1,6 @@
-$function player_statues:internal/kill_uuid with storage player_statues:data statues[$(statue_index)].elements[$(element_index)]
+$function player_statues:internal/kill_uuid with storage player_statues:data statues[{id:$(id)}].elements[0]
 
-execute store result storage player_statues:data score.element_index int 1 run scoreboard players add $player_statues player_statues.element_index 1
-execute if score $player_statues player_statues.element_index < $player_statues player_statues.element_indices run function player_statues:internal/iterate_elements_kill with storage player_statues:data score
+data modify storage player_statues:data statues[0].elements append from storage player_statues:data statues[0].elements[0]
+data remove storage player_statues:data statues[0].elements[0]
+
+execute unless data storage player_statues:data statues[0].elements[0].end run function player_statues:internal/iterate_elements_kill with storage player_statues:data update

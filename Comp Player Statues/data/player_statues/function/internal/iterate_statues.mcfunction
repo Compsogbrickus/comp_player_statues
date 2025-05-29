@@ -1,6 +1,8 @@
-function player_statues:internal/update_statue_macro with storage player_statues:data score
+data modify storage player_statues:data statues[0].elements append value {end:1b}
+execute unless data storage player_statues:data statues[0].elements[0].end run function player_statues:internal/iterate_elements
+data remove storage player_statues:data statues[0].elements[{end:1b}]
 
-function player_statues:internal/iterate_elements with storage player_statues:data score
+data modify storage player_statues:data statues append from storage player_statues:data statues[0]
+data remove storage player_statues:data statues[0]
 
-execute store result storage player_statues:data score.statue_index int 1 run scoreboard players add $player_statues player_statues.statue_index 1
-execute if score $player_statues player_statues.statue_index < $player_statues player_statues.statue_indices run function player_statues:internal/iterate_statues with storage player_statues:data score
+execute unless data storage player_statues:data statues[0].end run function player_statues:internal/iterate_statues

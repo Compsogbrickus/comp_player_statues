@@ -8,13 +8,9 @@ The "Comp Player Statues" folder in this repository functions as a datapack that
 
 Every player statue requires a model and texture. See the example resourcepack!
 
-Create (minimal): `/function player_statues:api/create {statue:{texture:"<texture>"}}`
+To create a statue, first make a loot table for it, then use `/loot spawn ...` to deploy it. See the example loot tables. To remove a statue, remove the loot table and then run an update. Loot tables refresh on datapack reload.
 
-Create (full, model part elements are arbitrary, but `head`, `body`, `left_arm`, `right_arm`, `left_leg`, `right_leg`, and `interaction` have defaults): `/function player_statues:api/create {statue:{id:<id>, texture:"<texture>", pos_x:<coord>, pos_y:<coord>, pos_z:<coord>, rotation_yaw:<degrees>, rotation_pitch:<degrees>, elements:[{id:<model_part>, right_rotation:<quarternion>, scale:[<x>, <y>, <z>], left_rotation:<quarternion>, translation:[<x>, <y>, <z>]}, {id:<interaction>, width:<width>, height:<height>, response:<0,1>, translation:[<x>, <y>, <z>]}]}}`
-
-Update (same parameters available as creating): `/function player_statues:api/update {statue:{id:<id>}}`
-
-Remove: `/function player_statues:api/update {statue:{id:<id>, mode:"remove"}}`
+Update (uses the same loot table as creating): `/function player_statues:api/update {namespace:<namespace>, id:<id>}`
 
 Update all (no parameters, despawns and resummons all statues): `/function player_statues:api/update_all`
 
@@ -26,4 +22,4 @@ Statue data is stored in `player_statues:data statues`, which includes UUIDs for
 
 **Gibbsly** - Simple UUID Converter library, which is found at <https://github.com/gibbsly/gu>
 
-**Additional Credits** - Various player models/statues datapacks, notably one by MelonBP.
+**Additional Credits** - Inspiration from various player models/statues datapacks, notably one by MelonBP.
