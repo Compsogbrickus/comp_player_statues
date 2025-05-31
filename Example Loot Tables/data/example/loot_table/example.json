@@ -17,169 +17,32 @@
                                     "rotation": ["~", 0.0],
                                     "elements": [
                                         {
-                                            "id": "head",
-                                            "type": "item_display",
-                                            "data": {
-                                                "Tags": [
-                                                    "player_statue.head",
-                                                    "player_statue.example",
-                                                    "player_statue.display",
-                                                    "player_statue.object"
-                                                ],
-                                                "item_display": "fixed",
-                                                "item": {
-                                                    "id": "stick",
-                                                    "components": {
-                                                        "item_model": "player_statues:example/head"
-                                                    }
-                                                },
-                                                "transformation": {
-                                                    "right_rotation": [0.0, 0.0, 0.0, 1.0],
-                                                    "scale": [1.0, 1.0, 1.0],
-                                                    "left_rotation": [0.0, 0.0, 0.0, 1.0],
-                                                    "translation": [0.0, 0.0, 0.0]
-                                                }
-                                            }
+                                            "type": "reference",
+                                            "id": "example/head"
                                         },
                                         {
-                                            "id": "body",
-                                            "type": "item_display",
-                                            "data": {
-                                                "Tags": [
-                                                    "player_statue.body",
-                                                    "player_statue.example",
-                                                    "player_statue.display",
-                                                    "player_statue.object"
-                                                ],
-                                                "item_display": "fixed",
-                                                "item": {
-                                                    "id": "stick",
-                                                    "components": {
-                                                        "item_model": "player_statues:example/body"
-                                                    }
-                                                },
-                                                "transformation": {
-                                                    "right_rotation": [0.0, 0.0, 0.0, 1.0],
-                                                    "scale": [1.0, 1.0, 1.0],
-                                                    "left_rotation": [0.0, 0.0, 0.0, 1.0],
-                                                    "translation": [0.0, 0.0, 0.0]
-                                                }
-                                            }
+                                            "type": "reference",
+                                            "id": "example/body"
                                         },
                                         {
-                                            "id": "left_arm",
-                                            "type": "item_display",
-                                            "data": {
-                                                "Tags": [
-                                                    "player_statue.left_arm",
-                                                    "player_statue.example",
-                                                    "player_statue.display",
-                                                    "player_statue.object"
-                                                ],
-                                                "item_display": "fixed",
-                                                "item": {
-                                                    "id": "stick",
-                                                    "components": {
-                                                        "item_model": "player_statues:example/left_arm"
-                                                    }
-                                                },
-                                                "transformation": {
-                                                    "right_rotation": [0.0, 0.0, 0.0, 1.0],
-                                                    "scale": [1.0, 1.0, 1.0],
-                                                    "left_rotation": [0.0, 0.0, 0.0, 1.0],
-                                                    "translation": [0.322265625, -0.1171875, 0.0]
-                                                }
-                                            }
+                                            "type": "reference",
+                                            "id": "example/left_arm"
                                         },
                                         {
-                                            "id": "right_arm",
-                                            "type": "item_display",
-                                            "data": {
-                                                "Tags": [
-                                                    "player_statue.right_arm",
-                                                    "player_statue.example",
-                                                    "player_statue.display",
-                                                    "player_statue.object"
-                                                ],
-                                                "item_display": "fixed",
-                                                "item": {
-                                                    "id": "stick",
-                                                    "components": {
-                                                        "item_model": "player_statues:example/right_arm"
-                                                    }
-                                                },
-                                                "transformation": {
-                                                    "right_rotation": [0.0, 0.0, 0.0, 1.0],
-                                                    "scale": [1.0, 1.0, 1.0],
-                                                    "left_rotation": [0.0, 0.0, 0.0, 1.0],
-                                                    "translation": [-0.322265625, -0.1171875, 0.0]
-                                                }
-                                            }
+                                            "type": "reference",
+                                            "id": "example/right_arm"
                                         },
                                         {
-                                            "id": "left_leg",
-                                            "type": "item_display",
-                                            "data": {
-                                                "Tags": [
-                                                    "player_statue.left_leg",
-                                                    "player_statue.example",
-                                                    "player_statue.display",
-                                                    "player_statue.object"
-                                                ],
-                                                "item_display": "fixed",
-                                                "item": {
-                                                    "id": "stick",
-                                                    "components": {
-                                                        "item_model": "player_statues:example/left_leg"
-                                                    }
-                                                },
-                                                "transformation": {
-                                                    "right_rotation": [0.0, 0.0, 0.0, 1.0],
-                                                    "scale": [1.0, 1.0, 1.0],
-                                                    "left_rotation": [0.0, 0.0, 0.0, 1.0],
-                                                    "translation": [0.1171875, -0.703125, 0.0]
-                                                }
-                                            }
+                                            "type": "reference",
+                                            "id": "example/left_leg"
                                         },
                                         {
-                                            "id": "right_leg",
-                                            "type": "item_display",
-                                            "data": {
-                                                "Tags": [
-                                                    "player_statue.right_leg",
-                                                    "player_statue.example",
-                                                    "player_statue.display",
-                                                    "player_statue.object"
-                                                ],
-                                                "item_display": "fixed",
-                                                "item": {
-                                                    "id": "stick",
-                                                    "components": {
-                                                        "item_model": "player_statues:example/right_leg"
-                                                    }
-                                                },
-                                                "transformation": {
-                                                    "right_rotation": [0.0, 0.0, 0.0, 1.0],
-                                                    "scale": [1.0, 1.0, 1.0],
-                                                    "left_rotation": [0.0, 0.0, 0.0, 1.0],
-                                                    "translation": [-0.1171875, -0.703125, 0.0]
-                                                }
-                                            }
+                                            "type": "reference",
+                                            "id": "example/right_leg"
                                         },
                                         {
-                                            "id": "interaction",
-                                            "type": "interaction",
-                                            "translation": [0.0, -1.40625, 0.0],
-                                            "data": {
-                                                "Tags": [
-                                                    "player_statue.interaction",
-                                                    "player_statue.example",
-                                                    "player_statue.object"
-                                                ],
-                                                "width": 0.6,
-                                                "height": 1.8,
-                                                "response": true
-                                            }
+                                            "type": "reference",
+                                            "id": "example/interaction"
                                         }
                                     ]
                                 }

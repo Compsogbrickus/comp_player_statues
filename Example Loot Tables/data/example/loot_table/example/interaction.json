@@ -1,0 +1,57 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:debug_stick",
+					"functions": [
+						{
+							"function": "minecraft:set_custom_data",
+							"tag": {
+                                "player_statue.elements": [
+                                    {
+                                        "id": "interaction_1",
+                                        "type": "interaction",
+                                        "data": {
+                                            "Tags": [
+                                                "player_statue.interaction",
+                                                "player_statue.example",
+                                                "player_statue.object"
+                                            ],
+                                            "width": 0.6,
+                                            "height": -1.40625,
+                                            "response": true,
+                                            "data": {
+                                                "player_statue.loot_table": {
+                                                    "id": "example/head",
+                                                    "behavior": "destroy",
+                                                    "root": "example"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "id": "interaction_2",
+                                        "type": "interaction",
+                                        "data": {
+                                            "Tags": [
+                                                "player_statue.interaction",
+                                                "player_statue.example",
+                                                "player_statue.object"
+                                            ],
+                                            "width": 0.6,
+                                            "height": 0.39375,
+                                            "response": true
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+					]
+				}
+			]
+		}
+	]
+}

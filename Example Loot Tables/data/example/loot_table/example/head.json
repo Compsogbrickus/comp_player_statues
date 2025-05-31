@@ -1,0 +1,48 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:debug_stick",
+					"functions": [
+						{
+							"function": "minecraft:set_custom_data",
+							"tag": {
+                                "player_statue.elements": [
+                                    {
+                                        "id": "head",
+                                        "type": "item_display",
+                                        "data": {
+                                            "Tags": [
+                                                "player_statue.root",
+                                                "player_statue.head",
+                                                "player_statue.example",
+                                                "player_statue.display",
+                                                "player_statue.object"
+                                            ],
+                                            "item_display": "fixed",
+                                            "item": {
+                                                "id": "stick",
+                                                "components": {
+                                                    "item_model": "player_statues:example/head"
+                                                }
+                                            },
+                                            "transformation": {
+                                                "right_rotation": [0.0, 0.0, 0.0, 1.0],
+                                                "scale": [1.0, 1.0, 1.0],
+                                                "left_rotation": [0.0, 0.0, 0.0, 1.0],
+                                                "translation": [0.0, 0.0, 0.0]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,1 +1,0 @@
-$tp @s ^$(translation_x) ^$(translation_y) ^$(translation_z)

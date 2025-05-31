@@ -1,1 +1,1 @@
-$loot spawn ~ ~ ~ loot $(namespace):$(id)
+$loot spawn ~ ~ ~ loot player_statues:$(id)

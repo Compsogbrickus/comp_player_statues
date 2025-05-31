@@ -1,1 +1,1 @@
-execute as @e[type=item] if data entity @s Item.components."minecraft:custom_data".player_statue run function player_statues:internal/process_item
+execute as @e[type=item] at @s if data entity @s Item.components."minecraft:custom_data".player_statue run function player_statues:internal/process_item

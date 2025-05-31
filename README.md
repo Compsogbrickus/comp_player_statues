@@ -8,9 +8,11 @@ The "Comp Player Statues" folder in this repository functions as a datapack that
 
 Every player statue requires a model and texture. See the example resourcepack!
 
-To create a statue, first make a loot table for it, then use `/loot spawn ...` to deploy it. See the example loot tables. To remove a statue, remove the loot table and then run an update. Loot tables refresh on datapack reload.
+To create a statue, first make a loot table for it, then use `/loot spawn ...` to deploy it. See the example loot tables. Loot tables refresh on datapack reload.
 
-Update (uses the same loot table as creating): `/function player_statues:api/update {namespace:<namespace>, id:<id>}`
+Update (uses the same loot table as creating): `/function player_statues:api/update {id:<id>}`
+
+Remove: `/function player_statues:api/remove {id:<id>}`
 
 Update all (no parameters, despawns and resummons all statues): `/function player_statues:api/update_all`
 
@@ -22,4 +24,4 @@ Statue data is stored in `player_statues:data statues`, which includes UUIDs for
 
 **Gibbsly** - Simple UUID Converter library, which is found at <https://github.com/gibbsly/gu>
 
-**Additional Credits** - Inspiration from various player models/statues datapacks, notably one by MelonBP.
+**Additional Credits** - Inspiration from various datapacks, notably a player models/statues datapack by MelonBP, and D.I.E.S. by RockNRed.

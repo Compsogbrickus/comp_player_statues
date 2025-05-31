@@ -1,0 +1,31 @@
+{
+	"criteria": {
+		"interaction": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:interaction",
+                    "nbt": "{Tags: [\"player_statue.object\", \"player_statue.interaction\"]}"
+				}
+			}
+		},
+        "attack": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:interaction",
+                    "nbt": "{Tags: [\"player_statue.object\", \"player_statue.interaction\"]}"
+				}
+			}
+		}
+	},
+    "requirements": [
+        [
+            "interaction",
+            "attack"
+        ]
+    ],
+	"rewards": {
+		"function": "player_statues:internal/interaction/main"
+	}
+}
