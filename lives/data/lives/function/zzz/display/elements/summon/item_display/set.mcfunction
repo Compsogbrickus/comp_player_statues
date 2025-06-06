@@ -1,0 +1,1 @@
+$loot replace entity @s container.0 loot lives:$(item_display_id)

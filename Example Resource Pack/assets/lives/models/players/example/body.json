@@ -1,0 +1,6 @@
+{
+    "parent": "lives:template/alex/body",
+    "textures": {
+        "skin": "lives:skins/example"
+    }
+}

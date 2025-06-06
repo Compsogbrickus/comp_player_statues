@@ -1,1 +1,0 @@
-$loot spawn ~ ~ ~ loot player_statues:$(id)

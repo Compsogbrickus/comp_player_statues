@@ -1,0 +1,31 @@
+{
+	"criteria": {
+		"interaction": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:interaction",
+                    "nbt": "{Tags: [\"lives.object\", \"lives.interaction\"]}"
+				}
+			}
+		},
+        "attack": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:interaction",
+                    "nbt": "{Tags: [\"lives.object\", \"lives.interaction\"]}"
+				}
+			}
+		}
+	},
+    "requirements": [
+        [
+            "interaction",
+            "attack"
+        ]
+    ],
+	"rewards": {
+		"function": "lives:zzz/interaction"
+	}
+}

@@ -1,1 +1,0 @@
-$execute as @e[type=#player_statues:stack, tag=player_statue.object, tag=!player_statue.root, tag=player_statue.$(id)] run ride @s mount @n[type=#player_statues:displays, tag=player_statue.display, tag=player_statue.object, tag=player_statue.root, tag=player_statue.$(id)]

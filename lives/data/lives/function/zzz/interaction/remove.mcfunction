@@ -1,0 +1,1 @@
+$function lives:api/remove {id:"$(root)"}

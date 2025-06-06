@@ -1,1 +1,0 @@
-$execute summon $(type) run function player_statues:internal/summon_pt2 with storage player_statues:data macro

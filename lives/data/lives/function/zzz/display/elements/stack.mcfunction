@@ -1,0 +1,1 @@
+$execute as @e[type=#lives:stack, tag=lives.object, tag=!lives.root, tag=lives.$(id)] run ride @s mount @n[type=#lives:displays, tag=lives.display, tag=lives.object, tag=lives.root, tag=lives.$(id)]

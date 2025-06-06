@@ -1,1 +1,0 @@
-$function player_statues:api/remove {id:"$(root)"}

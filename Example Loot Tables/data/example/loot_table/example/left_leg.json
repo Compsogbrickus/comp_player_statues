@@ -10,22 +10,22 @@
 						{
 							"function": "minecraft:set_custom_data",
 							"tag": {
-                                "player_statue.elements": [
+                                "lives.elements": [
                                     {
                                         "id": "left_leg",
                                         "type": "item_display",
                                         "data": {
                                             "Tags": [
-                                                "player_statue.left_leg",
-                                                "player_statue.example",
-                                                "player_statue.display",
-                                                "player_statue.object"
+                                                "lives.left_leg",
+                                                "lives.example",
+                                                "lives.display",
+                                                "lives.object"
                                             ],
                                             "item_display": "fixed",
                                             "item": {
                                                 "id": "stick",
                                                 "components": {
-                                                    "item_model": "player_statues:example/left_leg"
+                                                    "item_model": "lives:example/left_leg"
                                                 }
                                             },
                                             "transformation": {

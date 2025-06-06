@@ -1,22 +1,23 @@
-# Comp Player Statues
+# L.I.V.E.S.
+Loot Interfacing Variable Entity System
 
-I got tired of using datapacks from other people for player statues, so I made one for myself.
+D.I.E.S. if it learned new tricks! Creates fully customizable linked displays and interactions from loot tables.
 
-The "Comp Player Statues" folder in this repository functions as a datapack that can be dropped into a Minecraft world's "datapacks" folder. Once placed into the datapacks folder and once the world is reloaded, it will be ready for use.
+The "lives" folder in this repository functions as a datapack that can be dropped into a Minecraft world's "datapacks" folder. Once placed into the datapacks folder and once the world is reloaded, it will be ready for use.
 
 ## Documentation
 
-Every player statue requires a model and texture. See the example resourcepack!
+To create a display, first make a loot table for it, then use `/loot spawn ...` to deploy it. See the example loot tables. Loot tables refresh on datapack reload.
 
-To create a statue, first make a loot table for it, then use `/loot spawn ...` to deploy it. See the example loot tables. Loot tables refresh on datapack reload.
+Update (uses the same loot table as creating): `/function lives:update {id:<id>}`
 
-Update (uses the same loot table as creating): `/function player_statues:api/update {id:<id>}`
+Remove: `/function lives:remove {id:<id>}`
 
-Remove: `/function player_statues:api/remove {id:<id>}`
+Update all (no parameters, despawns and resummons all displays): `/function lives:update_all`
 
-Update all (no parameters, despawns and resummons all statues): `/function player_statues:api/update_all`
+Display data is stored in `lives:data displays`, which includes UUIDs for individual model parts. Currently, updating a display refreshes the UUIDs, and should be used for resetting rather than animations.
 
-Statue data is stored in `player_statues:data statues`, which includes UUIDs for individual model parts. Currently, updating a statue refreshes the UUIDs, and should be used for resetting a statue rather than animations.
+To report a bug or suggest a feature, use the Issues tracker on Github. Issues are forwarded to my email. For more detailed questions, you can reach me at compsogbrickus@gmail.com or on Discord as compsogbrickus.
 
 ## Credits
 

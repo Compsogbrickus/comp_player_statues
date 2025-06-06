@@ -10,22 +10,22 @@
 						{
 							"function": "minecraft:set_custom_data",
 							"tag": {
-                                "player_statue.elements": [
+                                "lives.elements": [
                                     {
                                         "id": "right_arm",
                                         "type": "item_display",
                                         "data": {
                                             "Tags": [
-                                                "player_statue.right_arm",
-                                                "player_statue.example",
-                                                "player_statue.display",
-                                                "player_statue.object"
+                                                "lives.right_arm",
+                                                "lives.example",
+                                                "lives.display",
+                                                "lives.object"
                                             ],
                                             "item_display": "fixed",
                                             "item": {
                                                 "id": "stick",
                                                 "components": {
-                                                    "item_model": "player_statues:example/right_arm"
+                                                    "item_model": "lives:example/right_arm"
                                                 }
                                             },
                                             "transformation": {

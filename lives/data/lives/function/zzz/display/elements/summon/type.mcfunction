@@ -1,0 +1,1 @@
+$execute summon $(type) run function lives:zzz/display/elements/summon/data with storage lives:data macro

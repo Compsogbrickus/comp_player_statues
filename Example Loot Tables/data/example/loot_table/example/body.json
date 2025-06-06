@@ -10,22 +10,22 @@
 						{
 							"function": "minecraft:set_custom_data",
 							"tag": {
-                                "player_statue.elements": [
+                                "lives.elements": [
                                     {
                                         "id": "body",
                                         "type": "item_display",
                                         "data": {
                                             "Tags": [
-                                                "player_statue.body",
-                                                "player_statue.example",
-                                                "player_statue.display",
-                                                "player_statue.object"
+                                                "lives.body",
+                                                "lives.example",
+                                                "lives.display",
+                                                "lives.object"
                                             ],
                                             "item_display": "fixed",
                                             "item": {
                                                 "id": "stick",
                                                 "components": {
-                                                    "item_model": "player_statues:example/body"
+                                                    "item_model": "lives:example/body"
                                                 }
                                             },
                                             "transformation": {

@@ -10,21 +10,21 @@
 						{
 							"function": "minecraft:set_custom_data",
 							"tag": {
-                                "player_statue.elements": [
+                                "lives.elements": [
                                     {
                                         "id": "interaction_1",
                                         "type": "interaction",
                                         "data": {
                                             "Tags": [
-                                                "player_statue.interaction",
-                                                "player_statue.example",
-                                                "player_statue.object"
+                                                "lives.interaction",
+                                                "lives.example",
+                                                "lives.object"
                                             ],
                                             "width": 0.6,
                                             "height": -1.40625,
                                             "response": true,
                                             "data": {
-                                                "player_statue.loot_table": {
+                                                "lives.loot_table": {
                                                     "id": "example/head",
                                                     "behavior": "destroy",
                                                     "root": "example"
@@ -37,9 +37,9 @@
                                         "type": "interaction",
                                         "data": {
                                             "Tags": [
-                                                "player_statue.interaction",
-                                                "player_statue.example",
-                                                "player_statue.object"
+                                                "lives.interaction",
+                                                "lives.example",
+                                                "lives.object"
                                             ],
                                             "width": 0.6,
                                             "height": 0.39375,

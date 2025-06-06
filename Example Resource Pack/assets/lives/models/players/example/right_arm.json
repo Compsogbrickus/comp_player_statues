@@ -1,0 +1,6 @@
+{
+    "parent": "lives:template/alex/right_arm",
+    "textures": {
+        "skin": "lives:skins/example"
+    }
+}

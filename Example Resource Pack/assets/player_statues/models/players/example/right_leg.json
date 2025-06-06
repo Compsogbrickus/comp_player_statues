@@ -1,6 +1,0 @@
-{
-    "parent": "player_statues:template/alex/right_leg",
-    "textures": {
-        "skin": "player_statues:skins/example"
-    }
-}

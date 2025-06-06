@@ -1,0 +1,1 @@
+execute as @e[type=item,tag=!lives.scanned] at @s run function lives:zzz/item
